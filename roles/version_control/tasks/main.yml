@@ -1,0 +1,6 @@
+---
+# This playbook contains version control plays that will be run on all nodes.
+
+- name: Install git
+  yum: name=git state=installed
+  tags: git
